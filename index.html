@@ -12,8 +12,8 @@
       --mid:    #0e3a6e;
       --accent: #00c9e0;
       --warm:   #ff6b35;
-      --light:  #0b2240;
-      --muted:  #c8d4de;
+      --light:  #dceeff;
+      --muted:  #e8f3fc;
       --white:  #f0f8ff;
       --glass:  rgba(11,34,64,0.55);
       --border: rgba(0,201,224,0.25);
@@ -142,19 +142,19 @@
     .nav-dropdown::after {
       content: ''; position: absolute; top: -5px; left: 18px;
       border: 6px solid transparent; border-top: 0;
-      border-bottom-color: rgba(235,245,255,0.98);
+      border-bottom-color: rgba(2,13,26,0.94);
     }
 
     .dd-label {
       font-family: 'Inter', sans-serif;
       font-size: 0.9rem; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--muted); padding: 0.5rem 1.1rem 0.15rem; opacity: 0.55;
+      color: rgba(180,220,245,0.7); padding: 0.5rem 1.1rem 0.15rem;
     }
     .dd-divider { height: 1px; background: var(--border); margin: 0.4rem 0.7rem; }
     .dd-link {
       display: block;
       padding: 0.5rem 1.1rem;
-      color: var(--light); font-size: 0.83rem; font-weight: 400;
+      color: rgba(220,242,255,0.95); font-size: 0.9rem; font-weight: 500;
       cursor: pointer; text-decoration: none;
       border-left: 2px solid transparent;
       transition: color 0.15s, background 0.15s, border-color 0.15s;
@@ -162,7 +162,7 @@
     }
     .dd-link:hover {
       color: var(--accent);
-      background: rgba(0,201,224,0.07);
+      background: rgba(0,201,224,0.1);
       border-left-color: var(--accent);
     }
 
@@ -262,7 +262,7 @@
     .tab-panel.active { display:block; animation:fadeUp 0.3s ease both; }
 
     
-    .section-intro { max-width:900px; font-size: 1.4rem; color:var(--muted); line-height:1.8; margin-bottom:2.5rem; }
+    .section-intro { max-width:900px; font-size: 1.4rem; font-weight:500; color:rgba(220,240,255,0.95); line-height:1.8; margin-bottom:2.5rem; }
     .solutions-heading { font-family:'Inter', sans-serif; font-size:1.4rem; font-weight:700; color:var(--white); margin-bottom:1.2rem; }
 
     .member-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:1.2rem; margin-top:2rem; }
@@ -293,12 +293,12 @@
       display: flex; align-items: flex-end;
       padding: calc(var(--nav-h) + 2rem) 5rem 4rem;
       background:
-        linear-gradient(to top, rgba(2,13,26,0.95) 0%, rgba(2,13,26,0.75) 50%, rgba(2,13,26,0.45) 100%),
+        linear-gradient(to top, rgba(2,13,26,0.98) 0%, rgba(2,13,26,0.88) 50%, rgba(2,13,26,0.65) 100%),
         url('images/image_01.jpg') center/cover no-repeat;
     }
     .ml-hero-overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(to right, rgba(240,247,255,0.6) 0%, transparent 70%);
+      background: linear-gradient(to right, rgba(2,13,26,0.55) 0%, transparent 70%);
       pointer-events: none;
     }
     .ml-hero-content { position: relative; z-index: 1; max-width: 820px; }
@@ -316,7 +316,7 @@
     }
     .ml-hero-title em { font-style: italic; color: var(--accent); }
     .ml-hero-sub {
-      font-size: 1.45rem; font-weight: 300; color: rgba(212,234,247,0.8);
+      font-size: 1.45rem; font-weight: 500; color: rgba(220,240,255,0.95);
       line-height: 1.7; margin-bottom: 3rem;
     }
     .ml-stats-row {
@@ -332,7 +332,7 @@
       font-size: 2.6rem; font-weight: 900; color: var(--accent);
       line-height: 1; margin-bottom: 0.4rem;
     }
-    .ml-stat-label { font-size: 1.2rem; color: var(--muted); line-height: 1.5; }
+    .ml-stat-label { font-size: 1.2rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.5; }
     .ml-section { padding: 3rem 5rem; border-top: 1px solid var(--border); max-width: 100%; }
     .ml-section-tag {
       font-family: 'Inter', sans-serif;
@@ -346,16 +346,16 @@
       font-size: clamp(2rem, 4vw, 3rem); font-weight: 900;
       color: var(--white); line-height: 1.15; margin-bottom: 1.2rem;
     }
-    .ml-section-intro { font-size: 1.4rem; color: var(--muted); line-height: 1.75; margin-bottom: 2.5rem; }
+    .ml-section-intro { font-size: 1.4rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.75; margin-bottom: 2.5rem; }
     .ml-pullquote {
-      border-left: 3px solid var(--accent); background: rgba(0,201,224,0.05);
+      border-left: 3px solid var(--accent); background: rgba(0,201,224,0.12);
       border-radius: 0 10px 10px 0; padding: 1.2rem 1.6rem;
-      font-size: 1.2rem; color: var(--light); line-height: 1.7; margin-bottom: 3rem;
+      font-size: 1.2rem; font-weight: 500; color: rgba(220,242,255,0.97); line-height: 1.7; margin-bottom: 3rem;
     }
     .ml-pullquote-label { color: var(--accent); font-weight: 600; }
     .ml-impact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .ml-impact-card {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,60,120,0.65); border: 1px solid rgba(0,201,224,0.3);
       border-radius: 14px; padding: 1.2rem 1.4rem 1.4rem;
     }
     .ml-impact-icon {
@@ -367,27 +367,38 @@
       font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700;
       color: var(--accent); display: inline; vertical-align: middle; margin-bottom: 0;
     }
-    .ml-impact-desc { font-size: 1.25rem; color: var(--muted); line-height: 1.65; }
+    .ml-impact-desc { font-size: 1.25rem; font-weight:500; color: rgba(220,242,255,0.92); line-height: 1.65; }
     .ml-chain-section { display: grid; grid-template-columns: 2fr 3fr; min-height: 50vh; border-top: 1px solid var(--border); align-items: stretch; }
     .ml-chain-image { position: relative; overflow: hidden; min-height: 400px; }
     .ml-chain-image img { position: absolute; inset: 0; width:100%; height:100%; object-fit:cover; display:block; }
     .ml-chain-img-caption {
-      position: absolute; bottom: 1rem; right: 1rem; z-index: 1;
-      font-family: 'Inter', sans-serif; font-size: 0.9rem; letter-spacing: 0.15em;
-      color: rgba(255,255,255,0.35); text-transform: uppercase;
+      position: absolute; top: 1.2rem; left: 1.5rem; z-index: 2;
+      font-family: 'Inter', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em;
+      color: var(--accent); text-transform: uppercase;
+      background: rgba(2,13,26,0.72); backdrop-filter: blur(4px);
+      padding: 0.35rem 0.75rem; border-radius: 6px;
+      border-left: 2px solid var(--accent);
     }
     .ml-chain-img-overlay {
-      position: absolute; top: 0; left: 0; right: 0; z-index: 1;
-      background: linear-gradient(to bottom, rgba(2,13,26,0.92) 0%, rgba(240,247,255,0.4) 60%);
-      padding: 2.5rem 2rem;
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to bottom, rgba(2,13,26,0.85) 0%, rgba(2,13,26,0.35) 50%, transparent 100%);
+      display: flex; flex-direction: column; justify-content: flex-start;
+      padding: 2rem;
     }
     .ml-chain-img-tag {
-      font-family: 'Inter', sans-serif; font-size: 0.9rem; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;
+      font-family: 'Inter', sans-serif; font-size: 0.85rem; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem;
+      background: rgba(2,13,26,0.72); backdrop-filter: blur(4px);
+      padding: 0.35rem 0.75rem; border-radius: 6px;
+      border-left: 2px solid var(--accent);
+      display: inline-block;
     }
     .ml-chain-img-quote {
-      font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700;
-      color: var(--white); line-height: 1.4; max-width: 420px;
+      font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700;
+      color: #ffffff; line-height: 1.55; max-width: 420px;
+      background: rgba(2,13,26,0.72); backdrop-filter: blur(4px);
+      padding: 0.5rem 0.75rem; border-radius: 6px;
+      display: inline-block;
     }
     .ml-chain-content { background: var(--abyss); padding: 2rem 3rem; display: flex; flex-direction: column; justify-content: center; }
     
@@ -399,7 +410,7 @@
     
     .ml-evidence-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2rem; }
     .ml-evidence-card {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 12px; padding: 1.6rem 1.6rem 2rem;
     }
     .ml-evidence-location {
@@ -409,8 +420,8 @@
     }
     .ml-evidence-location::before { content: '◎'; font-size: 0.55rem; }
     .ml-evidence-title { font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 0.65rem; }
-    .ml-evidence-desc { font-size: 1.3rem; color: var(--muted); line-height: 1.65; }
-    .ml-closing { margin-top: 3rem; padding: 1.5rem 2rem; border-left: 3px solid rgba(0,201,224,0.3); font-size: 1.25rem; color: var(--muted); line-height: 1.75; font-style: italic; }
+    .ml-evidence-desc { font-size: 1.3rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; }
+    .ml-closing { margin-top: 3rem; padding: 1.5rem 2rem; border-left: 3px solid rgba(0,201,224,0.3); font-size: 1.25rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.75; font-style: italic; }
     .ml-solutions-header { padding: 3rem 5rem 0; border-top: 1px solid var(--border); }
     #page-marine .tabs { padding: 1.5rem 5rem 0; }
     #page-marine .tab-panel { padding: 0 5rem 4rem; }
@@ -465,7 +476,7 @@
       font-family: 'Inter', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem);
       font-weight: 900; color: var(--white); line-height: 1.15; margin-bottom: 1rem;
     }
-    .sol-section-intro { font-size: 1.4rem; color: var(--muted); line-height: 1.75; margin-bottom: 2.5rem; }
+    .sol-section-intro { font-size: 1.4rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.75; margin-bottom: 2.5rem; }
 
     
     .sol-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
@@ -485,13 +496,13 @@
       font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700;
       color: var(--white); padding: 0.8rem 1.2rem 0.4rem;
     }
-    .sol-mech-desc { font-size: 1.25rem; color: var(--muted); line-height: 1.65; padding: 0 1.2rem 1.2rem; }
+    .sol-mech-desc { font-size: 1.25rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; padding: 0 1.2rem 1.2rem; }
 
     
     .sol-pullquote {
-      border-left: 3px solid var(--accent); background: rgba(0,201,224,0.05);
+      border-left: 3px solid var(--accent); background: rgba(0,201,224,0.12);
       border-radius: 0 10px 10px 0; padding: 1.2rem 1.6rem;
-      font-size: 1rem; color: var(--light); line-height: 1.7;
+      font-size: 1rem; font-weight: 500; color: rgba(220,242,255,0.97); line-height: 1.7;
     }
     .sol-pullquote-accent { color: var(--accent); font-weight: 600; }
 
@@ -501,20 +512,27 @@
     .sol-split-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
     .sol-split-img-overlay {
       position: absolute; inset: 0; z-index: 1;
-      background: linear-gradient(to bottom, rgba(2,13,26,0.92) 0%, rgba(240,247,255,0.4) 55%, transparent 100%);
-      display: flex; flex-direction: column; justify-content: flex-end;
+      background: linear-gradient(to bottom, rgba(2,13,26,0.85) 0%, rgba(2,13,26,0.35) 50%, transparent 100%);
+      display: flex; flex-direction: column; justify-content: flex-start;
       padding: 2rem;
     }
     .sol-split-img-tag {
-      font-family: 'Inter', sans-serif; font-size: 0.9rem;
-      letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem;
+      font-family: 'Inter', sans-serif; font-size: 0.85rem;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem;
+      background: rgba(2,13,26,0.72); backdrop-filter: blur(4px);
+      padding: 0.35rem 0.75rem; border-radius: 6px;
+      border-left: 2px solid var(--accent);
+      display: inline-block;
     }
     .sol-split-img-quote {
-      font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700;
-      color: var(--white); line-height: 1.4;
+      font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700;
+      color: #ffffff; line-height: 1.55;
+      background: rgba(2,13,26,0.72); backdrop-filter: blur(4px);
+      padding: 0.5rem 0.75rem; border-radius: 6px;
+      display: inline-block;
     }
     .sol-split-content { padding: 2.5rem 3rem; background: var(--abyss); display: flex; flex-direction: column; justify-content: center; }
-    .sol-split-text { font-size: 1.35rem; color: var(--muted); line-height: 1.75; margin-bottom: 1rem; }
+    .sol-split-text { font-size: 1.35rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.75; margin-bottom: 1rem; }
     .sol-finding-box {
       background: rgba(0,201,224,0.06); border: 1px solid rgba(0,201,224,0.2);
       border-radius: 10px; padding: 1.2rem 1.4rem; margin-top: 1.2rem;
@@ -523,12 +541,12 @@
       font-family: 'Inter', sans-serif; font-size: 0.9rem;
       letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
     }
-    .sol-finding-text { font-size: 1.35rem; color: var(--light); line-height: 1.7; }
+    .sol-finding-text { font-size: 1.35rem; font-weight: 500; color: rgba(220,242,255,0.97); line-height: 1.7; }
 
     
     .sol-evidence-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-bottom: 1.5rem; }
     .sol-evidence-card {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 12px; padding: 1.2rem;
     }
     .sol-evidence-icon {
@@ -537,7 +555,7 @@
       display: flex; align-items: center; justify-content: center; margin-bottom: 0.7rem;
     }
     .sol-evidence-title { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
-    .sol-evidence-desc { font-size: 1.25rem; color: var(--muted); line-height: 1.6; }
+    .sol-evidence-desc { font-size: 1.25rem; font-weight: 500; color: rgba(210,235,255,0.92); line-height: 1.6; }
 
     
     .sol-photo-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -560,19 +578,19 @@
     .sol-limit-item:last-child { border-bottom: none; }
     .sol-limit-num { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; width: 2.5rem; line-height: 1; }
     .sol-limit-title { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 0.25rem; }
-    .sol-limit-desc { font-size: 1.3rem; color: var(--muted); line-height: 1.6; }
+    .sol-limit-desc { font-size: 1.3rem; font-weight: 500; color: rgba(210,235,255,0.92); line-height: 1.6; }
 
     
     .sol-takeaway {
       margin: 0; padding: 3rem 5rem;
-      background: rgba(0,201,224,0.04);
-      border-top: 1px solid rgba(0,201,224,0.2);
+      background: rgba(0,201,224,0.1);
+      border-top: 1px solid rgba(0,201,224,0.35);
     }
     .sol-takeaway-label {
       font-family: 'Inter', sans-serif; font-size: 0.9rem;
       letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
     }
-    .sol-takeaway-text { font-size: 1.25rem; color: var(--light); line-height: 1.8; }
+    .sol-takeaway-text { font-size: 1.25rem; font-weight: 500; color: rgba(220,242,255,0.97); line-height: 1.8; }
     #page-references p { padding-left: 2.5rem; text-indent: -2.5rem; margin-bottom: 0.8rem; }
 
     @media (max-width: 900px) {
@@ -622,7 +640,7 @@
     
     .mon-dhw-card {
       display: grid; grid-template-columns: 1fr 1.6fr; gap: 2rem;
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 14px; padding: 2.5rem; margin-bottom: 2rem;
     }
     .mon-dhw-tag {
@@ -634,7 +652,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.9rem;
     }
-    .mon-dhw-desc { font-size: 1rem; color: var(--muted); line-height: 1.72; }
+    .mon-dhw-desc { font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.72; }
     .mon-dhw-right { display: flex; align-items: center; }
     .mon-threshold { width: 100%; }
     .mon-threshold-val {
@@ -646,7 +664,7 @@
       border-radius: 3px; margin-bottom: 0.5rem; overflow: hidden;
     }
     .mon-threshold-fill { height: 100%; border-radius: 3px; }
-    .mon-threshold-label { font-size: 1rem; color: var(--muted); line-height: 1.5; }
+    .mon-threshold-label { font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.5; }
 
     @media (max-width:900px) {
       .mon-dhw-card { grid-template-columns: 1fr; }
@@ -658,7 +676,7 @@
       gap: 1.2rem; margin-bottom: 2rem;
     }
     .bc-ecosystem-card {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 14px; padding: 1.8rem;
     }
     .bc-ecosystem-icon { font-size: 1.8rem; margin-bottom: 0.9rem; }
@@ -666,7 +684,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.55rem;
     }
-    .bc-ecosystem-desc { font-size: 1rem; color: var(--muted); line-height: 1.7; }
+    .bc-ecosystem-desc { font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.7; }
 
     
     
@@ -693,10 +711,10 @@
       margin-top: 0.1rem;
     }
     .bc-pathway-title {
-      font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 700;
+      font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.2rem;
     }
-    .bc-pathway-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+    .bc-pathway-desc { font-size: 1.15rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.6; }
 
     
     .bc-recognition-card {
@@ -715,7 +733,7 @@
       letter-spacing: 0.12em; text-transform: uppercase;
       color: var(--accent); margin-bottom: 0.7rem;
     }
-    .bc-recognition-text { font-size: 1rem; color: var(--light); line-height: 1.75; }
+    .bc-recognition-text { font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.97); line-height: 1.75; }
 
     @media (max-width:900px) {
       .bc-ecosystem-grid { grid-template-columns: 1fr; }
@@ -729,7 +747,7 @@
       gap: 1.2rem; margin-bottom: 2rem;
     }
     .ct-step-card {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 14px; padding: 1.8rem; position: relative;
     }
     .ct-step-num {
@@ -741,7 +759,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.25rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.7rem;
     }
-    .ct-step-desc { font-size: 1.15rem; color: var(--muted); line-height: 1.72; }
+    .ct-step-desc { font-size: 1.15rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.72; }
 
     
     .ct-photo-full {
@@ -759,7 +777,7 @@
       letter-spacing: 0.15em; text-transform: uppercase;
       color: var(--accent); margin-bottom: 0.9rem;
     }
-    .ct-photo-caption-text { font-size: 1.25rem; color: var(--muted); line-height: 1.7; }
+    .ct-photo-caption-text { font-size: 1.25rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.7; }
 
     @media (max-width:900px) {
       .ct-steps-grid { grid-template-columns: 1fr; }
@@ -799,7 +817,7 @@
       border-radius: 14px; overflow: hidden;
       border: 1px solid var(--border);
     }
-    .oa-ba-img { width: 100%; display: block; }
+    .oa-ba-img { width: 100%; height: 340px; object-fit: cover; display: block; }
     .oa-ba-caption-row {
       display: flex; justify-content: space-between;
       padding: 0.6rem 1.2rem;
@@ -811,7 +829,7 @@
       letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
     }
     .oa-ba-desc {
-      font-size: 1rem; color: var(--muted); line-height: 1.65;
+      font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65;
       padding: 0.9rem 1.2rem 1.1rem;
       background: rgba(11,34,64,0.5);
       font-style: italic;
@@ -840,7 +858,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.6rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.7rem;
     }
-    .oa-card-desc { font-size: 1.35rem; color: var(--muted); line-height: 1.72; }
+    .oa-card-desc { font-size: 1.35rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.72; }
 
     @media (max-width:900px) {
       .oa-hero { padding: 6rem 2rem 3rem; }
@@ -862,7 +880,7 @@
       font-family: 'Inter', sans-serif; font-size: 0.9rem;
       letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);
     }
-    .track-chart-note { font-size: 0.9rem; color: var(--muted); font-style: italic; }
+    .track-chart-note { font-size: 0.9rem; color: rgba(200,230,255,0.85); font-style: italic; }
 
     
     .oae-method-grid {
@@ -870,7 +888,7 @@
       gap: 1.2rem; margin-top: 2rem;
     }
     .oae-method-card {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 14px; padding: 1.8rem;
       border-top: 3px solid var(--accent);
     }
@@ -883,7 +901,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.65rem;
     }
-    .oae-method-desc { font-size: 1rem; color: var(--muted); line-height: 1.72; }
+    .oae-method-desc { font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.72; }
 
     @media (max-width:900px) {
       .oae-method-grid { grid-template-columns: 1fr; }
@@ -907,7 +925,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.3rem;
     }
-    .bpmed-step-desc { font-size: 1.15rem; color: var(--muted); line-height: 1.65; }
+    .bpmed-step-desc { font-size: 1.15rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; }
 
     
     .wi-hero {
@@ -933,7 +951,7 @@
       gap: 0; align-items: start; margin-top: 2.5rem;
     }
     .wi-chain-step {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 14px; padding: 1.6rem;
     }
     .wi-chain-arrow {
@@ -948,13 +966,13 @@
     }
     .wi-chain-num {
       font-family: 'Inter', sans-serif; font-size: 0.9rem;
-      color: var(--muted); letter-spacing: 0.1em; margin-bottom: 0.25rem;
+      color: rgba(200,230,255,0.8); letter-spacing: 0.1em; margin-bottom: 0.25rem;
     }
     .wi-chain-title {
       font-family: 'Inter', sans-serif; font-size: 1.25rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.5rem;
     }
-    .wi-chain-desc { font-size: 1.15rem; color: var(--muted); line-height: 1.65; }
+    .wi-chain-desc { font-size: 1.15rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; }
 
     @media (max-width:900px) {
       .wi-hero { padding: 6rem 2rem 3rem; }
@@ -968,7 +986,7 @@
       gap: 1.2rem; margin-bottom: 1.5rem;
     }
     .turb-stat-card {
-      background: rgba(11,34,64,0.45); border: 1px solid var(--border);
+      background: rgba(0,40,90,0.7); border: 1px solid rgba(0,201,224,0.25);
       border-radius: 14px; padding: 1.6rem;
       border-top: 3px solid rgba(255,107,53,0.5);
     }
@@ -976,7 +994,7 @@
       font-family: 'Inter', sans-serif; font-size: 3rem; font-weight: 900;
       color: var(--warm); line-height: 1; margin-bottom: 0.6rem;
     }
-    .turb-stat-label { font-size: 1.15rem; color: var(--muted); line-height: 1.6; }
+    .turb-stat-label { font-size: 1.15rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.6; }
 
     
     
@@ -1035,7 +1053,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.3rem;
     }
-    .fw-how-desc { font-size: 1.15rem; color: var(--muted); line-height: 1.65; }
+    .fw-how-desc { font-size: 1.15rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; }
 
     @media (max-width:900px) {
       .fw-img-grid { grid-template-columns: 1fr; }
@@ -1066,7 +1084,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.28rem;
     }
-    .isl-step-desc { font-size: 1.15rem; color: var(--muted); line-height: 1.65; }
+    .isl-step-desc { font-size: 1.15rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; }
 
     @media (max-width:900px) {
       
@@ -1092,7 +1110,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 700;
       color: var(--white);
     }
-    .dc-split-desc { font-size: 1rem; color: var(--muted); line-height: 1.7; }
+    .dc-split-desc { font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.7; }
 
     .dc-tech-list { display: flex; flex-direction: column; gap: 0; }
     .dc-tech-item {
@@ -1109,7 +1127,7 @@
     .dc-tech-name::before {
       content: '●'; color: var(--accent); font-size: 0.5rem; flex-shrink: 0;
     }
-    .dc-tech-desc { font-size: 1rem; color: var(--muted); line-height: 1.65; }
+    .dc-tech-desc { font-size: 1rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; }
 
     @media (max-width:900px) {
       .dc-split { grid-template-columns: 1fr; }
@@ -1149,7 +1167,7 @@
       font-family: 'Inter', sans-serif; font-size: 1.25rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.3rem;
     }
-    .home-pillar-desc { font-size: 1.2rem; color: var(--muted); line-height: 1.65; }
+    .home-pillar-desc { font-size: 1.2rem; font-weight:500; color: rgba(220,240,255,0.95); line-height: 1.65; }
 
     
     .home-framework-grid {
@@ -1159,10 +1177,10 @@
       border-radius: 14px; padding: 2rem;
     }
     .home-framework-macro {
-      background: rgba(0,201,224,0.06); border: 1px solid rgba(0,201,224,0.2);
+      background: rgba(0,201,224,0.1); border: 1px solid rgba(0,201,224,0.35);
     }
     .home-framework-micro {
-      background: rgba(255,107,53,0.06); border: 1px solid rgba(255,107,53,0.2);
+      background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.35);
     }
     .home-framework-label {
       font-family: 'Inter', sans-serif; font-size: 0.9rem;
@@ -1174,16 +1192,16 @@
       font-family: 'Inter', sans-serif; font-size: 1.5rem; font-weight: 700;
       color: var(--white); margin-bottom: 0.7rem;
     }
-    .home-framework-desc { font-size: 1.2rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.2rem; }
+    .home-framework-desc { font-size: 1.2rem; color: rgba(220,242,255,0.92); line-height: 1.7; margin-bottom: 1.2rem; }
     .home-framework-items { display: flex; flex-direction: column; gap: 0.5rem; }
     .home-framework-item {
-      background: rgba(11,34,64,0.5); border: 1px solid var(--border);
+      background: rgba(0,30,70,0.75); border: 1px solid rgba(0,201,224,0.3);
       border-radius: 8px; padding: 0.6rem 1rem;
-      font-size: 1.1rem; color: var(--light);
+      font-size: 1.1rem; color: rgba(220,242,255,0.95);
       cursor: pointer; transition: all 0.2s;
       text-align: center;
     }
-    .home-framework-item:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,201,224,0.08); }
+    .home-framework-item:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,201,224,0.12); }
 
     @media (max-width:900px) {
       .home-img-grid { grid-template-columns: 1fr; }
@@ -1416,19 +1434,19 @@
         <div class="home-side-text">
           <div class="ml-section-tag">Recent Trends in Ocean Warming</div>
           <h2 class="ml-section-title">Accelerating Beyond Projections</h2>
-          <p style="font-size:1.25rem;color:var(--muted);line-height:1.8;margin-bottom:1.2rem;">Recent observations indicate that ocean warming is accelerating at a pace exceeding many previous projections. 2023 and 2024 recorded the highest sea surface temperatures ever measured by modern instruments (NASA, 2024; WMO, 2024).</p>
+          <p style="font-size:1.25rem;color:rgba(220,240,255,0.95);font-weight:500;line-height:1.8;margin-bottom:1.2rem;">Recent observations indicate that ocean warming is accelerating at a pace exceeding many previous projections. 2023 and 2024 recorded the highest sea surface temperatures ever measured by modern instruments (NASA, 2024; WMO, 2024).</p>
           <div class="sol-pullquote" style="margin:0;"><span class="sol-pullquote-accent">Marine heatwaves:</span> Not only are they becoming more frequent — they are growing more intense and lasting longer, leading to coral bleaching and mass deaths across the Great Barrier Reef, Florida Keys, and Caribbean reef systems (Hughes et al., 2018; Frölicher et al., 2018).</div>
         </div>
-        <div class="home-side-img"><img src="images/image_08.jpg" alt="Global marine heatwave map" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:12px;height:100%;flex:1;border:1px solid var(--border);" /><p style="font-size:0.72rem;color:var(--muted);font-style:italic;margin-top:0.6rem;line-height:1.5;">Marine heat waves are becoming more frequent, more intense, and lasting longer — leading to coral bleaching and deaths across major reef systems globally (Frölicher et al., 2018).</p></div>
+        <div class="home-side-img"><img src="images/image_08.jpg" alt="Global marine heatwave map" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:12px;height:100%;flex:1;border:1px solid var(--border);" /><p style="font-size:0.72rem;color:rgba(220,240,255,0.95);font-style:italic;margin-top:0.6rem;line-height:1.5;">Marine heat waves are becoming more frequent, more intense, and lasting longer — leading to coral bleaching and deaths across major reef systems globally (Frölicher et al., 2018).</p></div>
       </div>
 
       <div class="home-side-section" style="border-top:1px solid var(--border);">
-        <div class="home-side-img"><img src="images/image_09.jpg" alt="Hurricane intensification diagram" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:12px;height:100%;flex:1;border:1px solid var(--border);" /><p style="font-size:0.72rem;color:var(--muted);font-style:italic;margin-top:0.6rem;line-height:1.5;">Ocean warming amplifies the intensity of extreme weather events such as hurricanes, typhoons, and tropical storms (Emanuel, 2005; Knutson et al., 2020).</p></div>
+        <div class="home-side-img"><img src="images/image_09.jpg" alt="Hurricane intensification diagram" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:12px;height:100%;flex:1;border:1px solid var(--border);" /><p style="font-size:0.72rem;color:rgba(220,240,255,0.95);font-style:italic;margin-top:0.6rem;line-height:1.5;">Ocean warming amplifies the intensity of extreme weather events such as hurricanes, typhoons, and tropical storms (Emanuel, 2005; Knutson et al., 2020).</p></div>
         <div class="home-side-text">
           <div class="ml-section-tag">Ocean Warming &amp; Extreme Weather</div>
           <h2 class="ml-section-title">Fueling Storms, Amplifying Disasters</h2>
-          <p style="font-size:1.2rem;color:var(--muted);line-height:1.8;">Ocean warming amplifies the intensity of extreme weather. The enormous energy absorbed by the oceans becomes extra fuel for hurricanes, typhoons, and tropical storms — increasing wind speed, precipitation, and destructive capacity (Emanuel, 2005; Knutson et al., 2020).</p>
-          <p style="font-size:1.2rem;color:var(--muted);line-height:1.8;margin-top:1rem;">The cumulative effect of ocean warming is also linked to the changing dynamics of large-scale climatic phenomena like El Niño and La Niña (Cai et al., 2014; McPhaden et al., 2020).</p>
+          <p style="font-size:1.2rem;color:rgba(220,240,255,0.95);line-height:1.8;">Ocean warming amplifies the intensity of extreme weather. The enormous energy absorbed by the oceans becomes extra fuel for hurricanes, typhoons, and tropical storms — increasing wind speed, precipitation, and destructive capacity (Emanuel, 2005; Knutson et al., 2020).</p>
+          <p style="font-size:1.2rem;color:rgba(220,240,255,0.95);line-height:1.8;margin-top:1rem;">The cumulative effect of ocean warming is also linked to the changing dynamics of large-scale climatic phenomena like El Niño and La Niña (Cai et al., 2014; McPhaden et al., 2020).</p>
         </div>
       </div>
 
@@ -1461,7 +1479,7 @@
           </div>
         </div>
 
-        <div class="sol-pullquote" style="margin-top:2rem; border-left-color:rgba(0,201,224,0.5); font-size:1.25rem;">
+        <div class="sol-pullquote" style="margin-top:2rem; border-left-color:rgba(0,201,224,0.7); font-size:1.25rem; background:rgba(0,201,224,0.12); color:rgba(220,242,255,0.97);">
           Through a combination of macro-level and micro-level measures, this research seeks to investigate both the <strong style="color:var(--accent);">root cause</strong> of ocean warming and the <strong style="color:var(--accent);">adaptation strategies</strong> required to respond to its impacts.
         </div>
       </div>
@@ -1838,17 +1856,16 @@
       <div class="ml-chain-section">
         <div class="ml-chain-image">
           <img src="images/image_15.jpg" alt="Before and after coral bleaching" style="width:100%;height:100%;object-fit:cover;object-position:right;display:block;" />
-          <div class="ml-chain-img-caption">BLEACHED CORAL — DOCUMENTED EVIDENCE</div>
           <div class="ml-chain-img-overlay">
-            <div class="ml-chain-img-tag">DOCUMENTED EVIDENCE</div>
+            <div class="ml-chain-img-tag">BLEACHED CORAL — DOCUMENTED EVIDENCE</div>
             <p class="ml-chain-img-quote">Similar large-scale cases in the Great Barrier Reef and the Florida Keys suggest these effects are occurring more systematically and repeatedly.</p>
           </div>
         </div>
         <div class="ml-chain-content">
           <div class="ml-section-tag">Beyond Coral Reefs</div>
           <h2 class="ml-section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">Kelp, Seaweed &amp; Marine Habitat Loss</h2>
-          <p style="font-size:1.25rem; color:var(--muted); line-height:1.75; margin-bottom:1rem;">Ocean heat waves cause extensive ecological destruction beyond coral reefs — through altered species ranges and degraded habitat stability. As stated by NOAA, increases in ocean temperatures affect the health of kelp forests, seaweed, and marine life habitats through increased strain on their heat tolerance threshold and forced migration towards cooler environments (NOAA, n.d.).</p>
-          <p style="font-size:1.25rem; color:var(--muted); line-height:1.75; margin-bottom:1rem;">Such redistribution results in an imbalance within the ecosystem. The ocean is the largest absorber of more than 90% of the excess heat from the atmosphere, meaning that marine habitats will be the earliest and most affected by global warming (NOAA, n.d.).</p>
+          <p style="font-size:1.25rem; color:rgba(220,240,255,0.95); line-height:1.75; margin-bottom:1rem;">Ocean heat waves cause extensive ecological destruction beyond coral reefs — through altered species ranges and degraded habitat stability. As stated by NOAA, increases in ocean temperatures affect the health of kelp forests, seaweed, and marine life habitats through increased strain on their heat tolerance threshold and forced migration towards cooler environments (NOAA, n.d.).</p>
+          <p style="font-size:1.25rem; color:rgba(220,240,255,0.95); line-height:1.75; margin-bottom:1rem;">Such redistribution results in an imbalance within the ecosystem. The ocean is the largest absorber of more than 90% of the excess heat from the atmosphere, meaning that marine habitats will be the earliest and most affected by global warming (NOAA, n.d.).</p>
           <div class="sol-finding-box">
             <div class="sol-finding-label">The "Unknown" Marine Future</div>
             <p class="sol-finding-text">With increasing heat stress, organisms move towards cooler places — altering established ecological interactions and making marine life unpredictable. Not only does this redistribution change biodiversity patterns, it also poses challenges to fisheries, conservation areas, and national jurisdictions built on historically stable species distributions (Stock, 2025; Niranjan, 2026).</p>
@@ -2092,8 +2109,8 @@
 
       <!-- SECTION 2: EFFECTIVENESS — split layout with buoy image -->
       <div class="sol-split-section">
-        <div class="sol-split-img" style="max-height:65vh;">
-          <img src="images/image_23.jpg" alt="Ocean monitoring buoy at sea" style="height:100%; object-fit:cover;" />
+        <div class="sol-split-img">
+          <img src="images/image_23.jpg" alt="Ocean monitoring buoy at sea" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;" />
           <div class="sol-split-img-overlay">
             <div class="sol-split-img-tag">Field Sensor Network</div>
           </div>
@@ -2223,8 +2240,8 @@
 
       <!-- SECTION 2: DIAGRAM — full-width -->
       <div class="home-side-section" style="border-top:1px solid var(--border); padding:3rem 5rem;">
-        <div class="home-side-img"><div class="bc-diagram-label" style="margin-bottom:0.8rem;">BLUE CARBON RESTORATION &amp; CARBON SEQUESTRATION</div><img src="images/image_25.jpg" alt="Blue Carbon Restoration and Carbon Sequestration diagram" style="width:100%;height:100%;flex:1;object-fit:cover;border-radius:12px;border:1px solid var(--border);display:block;" /><p style="font-size:0.72rem;color:var(--muted);font-style:italic;margin-top:0.6rem;line-height:1.5;">The blue carbon cycle: photosynthesis captures CO₂ into biomass, sequestered in oxygen-depleted sediments for centuries.</p></div>
-        <div class="home-side-text"><h3 class="sol-section-title" style="font-size:1.8rem;">Carbon, Stored for Centuries</h3><p style="font-size:1.2rem;color:var(--muted);line-height:1.8;margin-top:1rem;">Coastal vegetation absorbs CO₂ through photosynthesis and stores carbon both in biomass and in hypoxic sediments — where slow decomposition keeps it locked away for hundreds of years (Friess et al., 2024; NOAA, n.d.).</p><p style="font-size:1.2rem;color:var(--muted);line-height:1.8;margin-top:0.8rem;">Restoring degraded blue carbon habitats re-activates this carbon uptake pathway, while protecting existing ecosystems prevents stored carbon from being released back to the atmosphere (Macreadie et al., 2026).</p></div>
+        <div class="home-side-img"><div class="bc-diagram-label" style="margin-bottom:0.8rem;">BLUE CARBON RESTORATION &amp; CARBON SEQUESTRATION</div><img src="images/image_25.jpg" alt="Blue Carbon Restoration and Carbon Sequestration diagram" style="width:100%;height:100%;flex:1;object-fit:cover;border-radius:12px;border:1px solid var(--border);display:block;" /><p style="font-size:0.72rem;color:rgba(220,240,255,0.95);font-style:italic;margin-top:0.6rem;line-height:1.5;">The blue carbon cycle: photosynthesis captures CO₂ into biomass, sequestered in oxygen-depleted sediments for centuries.</p></div>
+        <div class="home-side-text"><h3 class="sol-section-title" style="font-size:1.8rem;">Carbon, Stored for Centuries</h3><p style="font-size:1.2rem;color:rgba(220,240,255,0.95);line-height:1.8;margin-top:1rem;">Coastal vegetation absorbs CO₂ through photosynthesis and stores carbon both in biomass and in hypoxic sediments — where slow decomposition keeps it locked away for hundreds of years (Friess et al., 2024; NOAA, n.d.).</p><p style="font-size:1.2rem;color:rgba(220,240,255,0.95);line-height:1.8;margin-top:0.8rem;">Restoring degraded blue carbon habitats re-activates this carbon uptake pathway, while protecting existing ecosystems prevents stored carbon from being released back to the atmosphere (Macreadie et al., 2026).</p></div>
       </div>
 
       <!-- SECTION 3: FOUR MITIGATION PATHWAYS — split with mangrove image -->
@@ -2422,7 +2439,7 @@
             <span class="sol-pullquote-accent">Key insight:</span> Monitoring the live situation of the ocean helps us to quickly respond to changes in temperature.
           </div>
         </div>
-        <div class="sol-split-img" style="min-height:400px; background: linear-gradient(135deg, rgba(200,230,250,0.85), rgba(220,238,255,0.9)); display:flex; align-items:center; justify-content:center; flex-direction:column; padding:3rem; gap:1.5rem;">
+        <div class="sol-split-img" style="min-height:400px; background: linear-gradient(135deg, rgba(0,30,70,0.9), rgba(0,20,50,0.95)); display:flex; align-items:center; justify-content:center; flex-direction:column; padding:3rem; gap:1.5rem;">
           <svg viewBox="0 0 260 260" width="220" height="220" xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="130" cy="130" rx="115" ry="90" fill="none" stroke="rgba(0,201,224,0.12)" stroke-width="14"/>
             <ellipse cx="130" cy="130" rx="97" ry="75" fill="none" stroke="rgba(0,201,224,0.15)" stroke-width="12"/>
@@ -2438,7 +2455,7 @@
           </svg>
           <div style="text-align:center;">
             <div style="font-family:'Inter', sans-serif; font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem;">OTOLITH CROSS-SECTION</div>
-            <p style="font-size:0.78rem; color:var(--muted); line-height:1.6; max-width:200px;">Annual rings encode the oxygen isotope value — allowing study of the fish's temperature exposure over its lifetime.</p>
+            <p style="font-size:0.78rem; color:rgba(200,230,255,0.85); line-height:1.6; max-width:200px;">Annual rings encode the oxygen isotope value — allowing study of the fish's temperature exposure over its lifetime.</p>
           </div>
         </div>
       </div>
@@ -2453,7 +2470,7 @@
       </div>
 
       <!-- HERO BANNER -->
-      <div class="sol-hero" style="background: linear-gradient(to right, rgba(2,13,26,0.93) 45%, rgba(2,13,26,0.35) 100%), url('images/image_48.jpg'); background-size:cover; background-position:center; min-height:55vh; border-bottom:1px solid var(--border);">
+      <div class="sol-hero" style="background: linear-gradient(to right, rgba(2,13,26,0.93) 45%, rgba(2,13,26,0.35) 100%), url('images/image_48.jpg'); background-size:cover; background-position:center; min-height:66vh; border-bottom:1px solid var(--border);">
         <div class="sol-hero-inner">
           <div class="sol-eyebrow">Intervention Approach 02</div>
           <h2 class="sol-hero-title">Ocean Alkalinity Enhancement <em>(OAE)</em></h2>
@@ -2490,7 +2507,7 @@
       <!-- DIAGRAM -->
       <div style="border-top:1px solid var(--border); padding:3rem 5rem; display:flex; flex-direction:column; align-items:center;">
         <img src="images/image_31.jpg" alt="Ocean Alkalinity Enhancement diagram" style="width:75%; max-width:900px; border-radius:12px; border:1px solid var(--border); display:block; object-fit:contain;" />
-        <p style="font-size:0.85rem;color:var(--muted);font-style:italic;margin-top:0.8rem;line-height:1.5; text-align:center;">OAE system: alkaline materials react with seawater CO₂ to form bicarbonate stable for more than 10,000 years.</p>
+        <p style="font-size:0.85rem;color:rgba(200,230,255,0.85);font-style:italic;margin-top:0.8rem;line-height:1.5; text-align:center;">OAE system: alkaline materials react with seawater CO₂ to form bicarbonate stable for more than 10,000 years.</p>
       </div>
 
       <!-- SECTION 3: BENEFIT + CHALLENGE — two column -->
@@ -2528,7 +2545,7 @@
       </div>
 
       <!-- HERO BANNER -->
-      <div class="sol-hero" style="background: linear-gradient(to right, rgba(2,13,26,0.93) 45%, rgba(2,13,26,0.35) 100%), url('images/image_49.jpg'); background-size:cover; background-position:center; min-height:55vh; border-bottom:1px solid var(--border);">
+      <div class="sol-hero" style="background: linear-gradient(to right, rgba(2,13,26,0.93) 45%, rgba(2,13,26,0.35) 100%), url('images/image_49.jpg'); background-size:cover; background-position:center; min-height:69vh; border-bottom:1px solid var(--border);">
         <div class="sol-hero-inner">
           <div class="sol-eyebrow">Intervention Approach 03</div>
           <h2 class="sol-hero-title">Bipolar Membrane Electrodialysis <em>(BPMED)</em></h2>
@@ -2577,7 +2594,7 @@
         <div class="sol-split-img" style="background:var(--surface); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:3rem; gap:1.5rem;">
           <div style="display:flex; flex-direction:column; gap:0.8rem; width:100%;">
             <img src="images/image_32.png" alt="BPMED electrodialysis stack diagram" style="width:100%; border-radius:12px; border:1px solid var(--border); display:block;" />
-            <p style="font-size:0.72rem; color:var(--muted); text-align:center; font-style:italic; line-height:1.5;">BPMED electrodialysis stack diagram</p>
+            <p style="font-size:0.72rem; color:rgba(220,240,255,0.95); text-align:center; font-style:italic; line-height:1.5;">BPMED electrodialysis stack diagram</p>
           </div>
         </div>
       </div>
@@ -2667,7 +2684,7 @@
           </div>
           <div>
             <div style="font-family:'Inter', sans-serif; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:0.8rem;">Key Takeaway</div>
-            <p style="font-size:1.2rem; color:var(--light); line-height:1.8;">Seaweeds like kelp absorb carbon dioxide, lowering the level of acidification, and also giving off oxygen. Once harvested, they take the carbon with them and leave oxygen in the ocean — planting more of these beneficial seaweeds will help lower the rate of acidification of the ocean (NOAA Fisheries, 2022).</p>
+            <p style="font-size:1.2rem; color:rgba(220,240,255,0.97); font-weight:500; line-height:1.8;">Seaweeds like kelp absorb carbon dioxide, lowering the level of acidification, and also giving off oxygen. Once harvested, they take the carbon with them and leave oxygen in the ocean — planting more of these beneficial seaweeds will help lower the rate of acidification of the ocean (NOAA Fisheries, 2022).</p>
           </div>
         </div>
       </div>
@@ -3021,14 +3038,14 @@
       <!-- HERO -->
       <div style="padding: 5rem 5rem 3rem; border-bottom: 1px solid var(--border);">
         <div class="ml-section-tag" style="margin-bottom:0.8rem;">Conclusion</div>
-        <h2 style="font-size:clamp(2rem,4vw,3.2rem); font-weight:900; color:var(--light); line-height:1.2; margin-bottom:1.5rem;">A Dual Framework<br><em>for a Warming Ocean</em></h2>
-        <p style="font-size:1.2rem; color:var(--muted); line-height:1.8; max-width:100%;">The ocean is Earth's primary thermal regulator. The warming of our ocean brings about an unstable environment.</p>
+        <h2 style="font-size:clamp(2rem,4vw,3.2rem); font-weight:900; color:rgba(220,240,255,0.97); line-height:1.2; margin-bottom:1.5rem;">A Dual Framework<br><em>for a Warming Ocean</em></h2>
+        <p style="font-size:1.2rem; color:rgba(220,240,255,0.95); line-height:1.8; max-width:100%;">The ocean is Earth's primary thermal regulator. The warming of our ocean brings about an unstable environment.</p>
       </div>
 
       <!-- PARAGRAPH 1 -->
       <div style="padding: 4rem 5rem; border-bottom: 1px solid var(--border);">
         <div class="ml-section-tag" style="margin-bottom:1rem;">Overview</div>
-        <p style="font-size:1.2rem; color:var(--muted); line-height:1.9;">Through our research, we explored how ocean warming acts as the primary macro-level driver for specific micro-level threats: marine loss, ocean acidification, and weather intensification. By adopting a dual-layered analytical framework to analyze this structure, we found that a singular approach is insufficient regarding a crisis of this scale.</p>
+        <p style="font-size:1.2rem; color:rgba(220,240,255,0.95); line-height:1.9;">Through our research, we explored how ocean warming acts as the primary macro-level driver for specific micro-level threats: marine loss, ocean acidification, and weather intensification. By adopting a dual-layered analytical framework to analyze this structure, we found that a singular approach is insufficient regarding a crisis of this scale.</p>
       </div>
 
       <!-- PARAGRAPH 2: MACRO-LEVEL -->
@@ -3040,8 +3057,8 @@
           <div style="width: 5px; background: #00c9e0; flex-shrink: 0;"></div>
           <div style="flex: 1; padding: 2rem 2.5rem; border: 1px solid rgba(0,201,224,0.15); border-left: none; border-radius: 0 10px 10px 0;">
             <div class="ml-section-tag" style="margin-bottom:1rem; color:#00c9e0;">Macro-Level Solutions</div>
-            <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:var(--light); margin-bottom:1.2rem;">Decarbonization, Microbubble Technology & Cooling Towers</h3>
-            <p style="font-size:1.2rem; color:var(--muted); line-height:1.9;">To address the macro-level drivers of ocean warming, we came up with three solutions, including decarbonization, microbubble technology, and cooling towers. These solutions target the root thermodynamic cause. Along with these, proactively working on the micro-level threats that we identified is essential.</p>
+            <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:rgba(220,240,255,0.97); margin-bottom:1.2rem;">Decarbonization, Microbubble Technology & Cooling Towers</h3>
+            <p style="font-size:1.2rem; color:rgba(220,240,255,0.95); line-height:1.9;">To address the macro-level drivers of ocean warming, we came up with three solutions, including decarbonization, microbubble technology, and cooling towers. These solutions target the root thermodynamic cause. Along with these, proactively working on the micro-level threats that we identified is essential.</p>
           </div>
         </div>
       </div>
@@ -3058,22 +3075,22 @@
             <!-- Marine Loss -->
             <div style="padding: 2rem 2.5rem; border-bottom: 1px solid rgba(29,158,117,0.12);">
               <div class="ml-section-tag" style="margin-bottom:1rem; color:#0F6E56;">Micro-Level Solutions — Marine Loss</div>
-              <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:var(--light); margin-bottom:1.2rem;">Resilience of the Lost Marine Ecosystem</h3>
-              <p style="font-size:1.2rem; color:var(--muted); line-height:1.9; margin-bottom:0;">For the threat of marine loss under ocean warming, our research suggested three solutions. The first is developing heat-tolerant corals to improve the resilience of corals by utilizing natural variation and controlled adaptation processes. Another solution is real-time monitoring, which tracks the occurrence of marine thermal stress to identify risks to marine life. Finally, blue carbon ecosystem restoration can decrease greenhouse gases and build resilience in nature. These solutions focus on the resilience of the lost marine ecosystem.</p>
+              <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:rgba(220,240,255,0.97); margin-bottom:1.2rem;">Resilience of the Lost Marine Ecosystem</h3>
+              <p style="font-size:1.2rem; color:rgba(220,240,255,0.95); line-height:1.9; margin-bottom:0;">For the threat of marine loss under ocean warming, our research suggested three solutions. The first is developing heat-tolerant corals to improve the resilience of corals by utilizing natural variation and controlled adaptation processes. Another solution is real-time monitoring, which tracks the occurrence of marine thermal stress to identify risks to marine life. Finally, blue carbon ecosystem restoration can decrease greenhouse gases and build resilience in nature. These solutions focus on the resilience of the lost marine ecosystem.</p>
             </div>
 
             <!-- Ocean Acidification -->
             <div style="padding: 2rem 2.5rem; border-bottom: 1px solid rgba(29,158,117,0.12);">
               <div class="ml-section-tag" style="margin-bottom:1rem; color:#0F6E56;">Micro-Level Solutions — Ocean Acidification</div>
-              <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:var(--light); margin-bottom:1.2rem;">Chemistry — Artificial and Natural</h3>
-              <p style="font-size:1.2rem; color:var(--muted); line-height:1.9;">With the threat of ocean acidification, the first solution we suggested was tracking ocean temperature through otoliths, which allows us to respond quickly to changes in temperature and acidity. Through Ocean Alkalinity Enhancement (OAE), we can store carbon in the ocean for more than 10,000 years. Bipolar Membrane Electrodialysis (BPMED) is a new technology that allows us to neutralize acidity and enable carbon capture. For a natural solution, using kelp would benefit by absorbing carbon dioxide and thus lowering the level of acidification. All these solutions use chemistry — both in artificial and natural ways — to counter the threat of ocean acidification.</p>
+              <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:rgba(220,240,255,0.97); margin-bottom:1.2rem;">Chemistry — Artificial and Natural</h3>
+              <p style="font-size:1.2rem; color:rgba(220,240,255,0.95); line-height:1.9;">With the threat of ocean acidification, the first solution we suggested was tracking ocean temperature through otoliths, which allows us to respond quickly to changes in temperature and acidity. Through Ocean Alkalinity Enhancement (OAE), we can store carbon in the ocean for more than 10,000 years. Bipolar Membrane Electrodialysis (BPMED) is a new technology that allows us to neutralize acidity and enable carbon capture. For a natural solution, using kelp would benefit by absorbing carbon dioxide and thus lowering the level of acidification. All these solutions use chemistry — both in artificial and natural ways — to counter the threat of ocean acidification.</p>
             </div>
 
             <!-- Weather Intensification -->
             <div style="padding: 2rem 2.5rem;">
               <div class="ml-section-tag" style="margin-bottom:1rem; color:#0F6E56;">Micro-Level Solutions — Weather Intensification</div>
-              <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:var(--light); margin-bottom:1.2rem;">Building Resilient Infrastructure</h3>
-              <p style="font-size:1.2rem; color:var(--muted); line-height:1.9;">Regarding the solutions for weather intensification, typhoon-resistant wind turbines will help us by preventing the destruction of energy systems caused by a hurricane. Resilient planning frameworks would prevent major agricultural damage caused by weather intensification. We can also prevent localized flood damage from cascading into citywide power failure by defensive islanding. The solutions for weather intensification focus on building infrastructure resilient to this threat.</p>
+              <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:900; color:rgba(220,240,255,0.97); margin-bottom:1.2rem;">Building Resilient Infrastructure</h3>
+              <p style="font-size:1.2rem; color:rgba(220,240,255,0.95); line-height:1.9;">Regarding the solutions for weather intensification, typhoon-resistant wind turbines will help us by preventing the destruction of energy systems caused by a hurricane. Resilient planning frameworks would prevent major agricultural damage caused by weather intensification. We can also prevent localized flood damage from cascading into citywide power failure by defensive islanding. The solutions for weather intensification focus on building infrastructure resilient to this threat.</p>
             </div>
 
           </div>
@@ -3081,9 +3098,9 @@
       </div>
 
       <!-- FINAL TAKEAWAY -->
-      <div style="padding: 4rem 5rem; background: rgba(0,201,224,0.04); border-top: 1px solid rgba(0,201,224,0.2);">
+      <div style="padding: 4rem 5rem; background: rgba(0,201,224,0.1); border-top: 1px solid rgba(0,201,224,0.35);">
         <div style="font-family:'Inter',sans-serif; font-size:0.9rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem;">Final Takeaway</div>
-        <p style="font-size:1.2rem; color:var(--light); line-height:1.9;">Through these solutions, we aimed to provide a localized defense against the immediate symptoms of a warming ocean. Our research argues that to solve ocean warming, we should move on from a one-dimensional policy and approach this crisis in a dual analytic framework. We need to mitigate the core thermodynamic causes at the macro-level, which is the root cause of ocean warming. We also need to apply the solutions we suggested to the micro-level threats with the goal of preserving our coastal and marine systems.</p>
+        <p style="font-size:1.2rem; color:rgba(220,240,255,0.97); font-weight:500; line-height:1.9;">Through these solutions, we aimed to provide a localized defense against the immediate symptoms of a warming ocean. Our research argues that to solve ocean warming, we should move on from a one-dimensional policy and approach this crisis in a dual analytic framework. We need to mitigate the core thermodynamic causes at the macro-level, which is the root cause of ocean warming. We also need to apply the solutions we suggested to the micro-level threats with the goal of preserving our coastal and marine systems. Overall, our research shows that by combining climate mitigation, marine conservation, and sustainable management strategies, society can reduce the negative impacts of marine loss and protect the long-term health of ocean ecosystems.</p>
       </div>
 
     </section>
@@ -3092,9 +3109,9 @@
     <section class="page-section" id="page-references">
       <div style="padding:1.5rem 5rem 1rem; border-bottom:1px solid var(--border);">
         <div class="ml-section-tag" style="margin-bottom:0.8rem;">References</div>
-        <h2 style="font-size:clamp(1.8rem,3vw,2.6rem); font-weight:900; color:var(--light);">Sources & Citations</h2>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.6rem); font-weight:900; color:rgba(220,240,255,0.97);">Sources & Citations</h2>
       </div>
-      <div style="padding:1.5rem 5rem; line-height:1.85; font-size:0.9rem; color:var(--muted);">
+      <div style="padding:1.5rem 5rem; line-height:1.85; font-size:0.9rem; color:rgba(210,235,255,0.88);">
         <style>
           #page-references p { padding-left:2rem; text-indent:-2rem; margin-bottom:0.8rem; }
           .ref-section-label { font-family:"Inter",sans-serif; font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:2.5rem 0 1rem 0; padding-bottom:0.5rem; border-bottom:1px solid var(--border); display:block; }
@@ -3236,16 +3253,16 @@
     <section class="page-section" id="page-members">
 
       <!-- HEADER -->
-      <div style="padding:1.5rem 5rem 2rem; border-bottom:1px solid var(--border);">
-        <div class="ml-section-tag" style="margin-bottom:0.8rem;">Group 6</div>
-        <h2 style="font-size:clamp(1.8rem,3vw,2.6rem); font-weight:900; color:var(--light);">Meet the <em>Team</em></h2>
+      <div style="padding:1.5rem 5rem 2rem; border-bottom:1px solid var(--border); background:rgba(0,30,70,0.3);">
+        <div class="ml-section-tag" style="margin-bottom:0.8rem; color:var(--accent);">Group 6</div>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.6rem); font-weight:900; color:#ffffff;">Meet the <em>Team</em></h2>
       </div>
 
       <!-- 3 ROLE BOXES IN ONE ROW, 2 MEMBERS EACH -->
       <div style="padding:3rem 2rem; display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem;">
 
         <!-- BOX 1: Cooling Tower · Marine Loss -->
-        <div style="border:1px solid var(--border); border-radius:14px; overflow:hidden;">
+        <div style="border:1px solid rgba(0,201,224,0.25); border-radius:14px; overflow:hidden; background:rgba(0,20,50,0.4);">
           <div style="background:rgba(0,201,224,0.08); border-bottom:1px solid var(--border); padding:1rem 1.2rem; text-align:center; min-height:3.5rem; display:flex; align-items:center; justify-content:center;">
             <div style="font-family:'Inter',sans-serif; font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); font-weight:600;">Cooling Tower · Marine Loss</div>
           </div>
@@ -3255,22 +3272,22 @@
               <div style="aspect-ratio:1/1; border-radius:8px; overflow:hidden; border:1px solid var(--border); margin-bottom:0.8rem;">
                 <img src="images/member_1_gyuri.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 15%;" />
               </div>
-              <div style="font-size:0.95rem; font-weight:700; color:var(--light); margin-bottom:0.2rem;">Gyuri Oh</div>
-              <div style="font-size:0.72rem; color:var(--muted);">Technological System Management</div>
+              <div style="font-size:0.95rem; font-weight:700; color:#ffffff; margin-bottom:0.2rem; text-align:center;">Gyuri Oh</div>
+              <div style="font-size:0.72rem; color:rgba(220,240,255,0.95); text-align:center;">Technological System Management</div>
             </div>
             <!-- Jungwon Kim -->
             <div style="padding:1.5rem;">
               <div style="aspect-ratio:1/1; border-radius:8px; overflow:hidden; border:1px solid var(--border); margin-bottom:0.8rem;">
                 <img src="images/member_2_jungwon.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;" />
               </div>
-              <div style="font-size:0.95rem; font-weight:700; color:var(--light); margin-bottom:0.2rem;">Jungwon Kim</div>
-              <div style="font-size:0.72rem; color:var(--muted);">Technological System Management</div>
+              <div style="font-size:0.95rem; font-weight:700; color:#ffffff; margin-bottom:0.2rem; text-align:center;">Jungwon Kim</div>
+              <div style="font-size:0.72rem; color:rgba(220,240,255,0.95); text-align:center;">Technological System Management</div>
             </div>
           </div>
         </div>
 
         <!-- BOX 2: Decarbonization · Ocean Acidification -->
-        <div style="border:1px solid var(--border); border-radius:14px; overflow:hidden;">
+        <div style="border:1px solid rgba(0,201,224,0.25); border-radius:14px; overflow:hidden; background:rgba(0,20,50,0.4);">
           <div style="background:rgba(0,201,224,0.08); border-bottom:1px solid var(--border); padding:1rem 1.2rem; text-align:center; min-height:3.5rem; display:flex; align-items:center; justify-content:center;">
             <div style="font-family:'Inter',sans-serif; font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); font-weight:600;">Decarbonization · Ocean Acidification</div>
           </div>
@@ -3280,22 +3297,22 @@
               <div style="aspect-ratio:1/1; border-radius:8px; overflow:hidden; border:1px solid var(--border); margin-bottom:0.8rem;">
                 <img src="images/member_4_eunbin.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;" />
               </div>
-              <div style="font-size:0.95rem; font-weight:700; color:var(--light); margin-bottom:0.2rem;">Eunbin Kim</div>
-              <div style="font-size:0.72rem; color:var(--muted);">Business Management</div>
+              <div style="font-size:0.95rem; font-weight:700; color:#ffffff; margin-bottom:0.2rem; text-align:center;">Eunbin Kim</div>
+              <div style="font-size:0.72rem; color:rgba(220,240,255,0.95); text-align:center;">Business Management</div>
             </div>
             <!-- Heewon Yun -->
             <div style="padding:1.5rem;">
               <div style="aspect-ratio:1/1; border-radius:8px; overflow:hidden; border:1px solid var(--border); margin-bottom:0.8rem;">
                 <img src="images/member_3_heewon.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 35%;" />
               </div>
-              <div style="font-size:0.95rem; font-weight:700; color:var(--light); margin-bottom:0.2rem;">Heewon Yun</div>
-              <div style="font-size:0.72rem; color:var(--muted);">Business Management</div>
+              <div style="font-size:0.95rem; font-weight:700; color:#ffffff; margin-bottom:0.2rem; text-align:center;">Heewon Yun</div>
+              <div style="font-size:0.72rem; color:rgba(220,240,255,0.95); text-align:center;">Business Management</div>
             </div>
           </div>
         </div>
 
         <!-- BOX 3: Microbubble · Weather Intensification -->
-        <div style="border:1px solid var(--border); border-radius:14px; overflow:hidden;">
+        <div style="border:1px solid rgba(0,201,224,0.25); border-radius:14px; overflow:hidden; background:rgba(0,20,50,0.4);">
           <div style="background:rgba(0,201,224,0.08); border-bottom:1px solid var(--border); padding:1rem 1.2rem; text-align:center; min-height:3.5rem; display:flex; align-items:center; justify-content:center;">
             <div style="font-family:'Inter',sans-serif; font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); font-weight:600;">Microbubble · Weather Intensification</div>
           </div>
@@ -3305,16 +3322,16 @@
               <div style="aspect-ratio:1/1; border-radius:8px; overflow:hidden; border:1px solid var(--border); margin-bottom:0.8rem;">
                 <img src="images/member_5_sunghyun.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;" />
               </div>
-              <div style="font-size:0.95rem; font-weight:700; color:var(--light); margin-bottom:0.2rem;">Sunghyun Choo</div>
-              <div style="font-size:0.72rem; color:var(--muted);">Computer Science</div>
+              <div style="font-size:0.95rem; font-weight:700; color:#ffffff; margin-bottom:0.2rem; text-align:center;">Sunghyun Choo</div>
+              <div style="font-size:0.72rem; color:rgba(220,240,255,0.95); text-align:center;">Computer Science</div>
             </div>
             <!-- Jeana Lim -->
             <div style="padding:1.5rem;">
               <div style="aspect-ratio:1/1; border-radius:8px; overflow:hidden; border:1px solid var(--border); margin-bottom:0.8rem;">
                 <img src="images/member_6_jeana.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 15%;" />
               </div>
-              <div style="font-size:0.95rem; font-weight:700; color:var(--light); margin-bottom:0.2rem;">Jeana Lim</div>
-              <div style="font-size:0.72rem; color:var(--muted);">Business Management</div>
+              <div style="font-size:0.95rem; font-weight:700; color:#ffffff; margin-bottom:0.2rem; text-align:center;">Jeana Lim</div>
+              <div style="font-size:0.72rem; color:rgba(220,240,255,0.95); text-align:center;">Business Management</div>
             </div>
           </div>
         </div>
