@@ -2918,21 +2918,33 @@
         </div>
       </div>
 
-      <!-- SECTION 3: THE SOLUTION — split -->
-      <div class="sol-split-section" style="min-height:auto; grid-template-columns: 1fr 1fr;">
-        <div class="sol-split-content" style="background:var(--abyss);">
-          <div class="sol-section-tag">The Solution</div>
-          <h3 class="sol-section-title" style="font-size:clamp(1.5rem,2.5vw,2.1rem);">Advanced Climate Forecasts &amp; Water Infrastructure</h3>
-          <p class="sol-split-text">Using advanced climate forecasts and building new water systems can prevent major agricultural damage from El Niño effects. Ocean data can accurately predict El Niño patterns up to <strong style="color:var(--accent);">14 months</strong> before the actual impact (Guimarães Nobre et al., 2019).</p>
-          <p class="sol-split-text">Using this approach, governments can intervene by investing in infrastructure such as water reservoirs and deep wells — preparing communities before conditions deteriorate.</p>
-          <div class="sol-finding-box">
-            <div class="sol-finding-label">Humanitarian Application</div>
-            <p class="sol-finding-text">Humanitarian organizations can use these predictions to help farmers select specific types of seeds that can survive even in higher heat and lower rainfall. Although these methods do not directly solve El Niño, they can reduce the financial damage caused by extreme heat.</p>
+      <!-- SECTION 3: THE SOLUTION — image left, text right -->
+      <div class="sol-section" style="border-top:1px solid var(--border);">
+        <div class="sol-section-tag">The Solution</div>
+        <h3 class="sol-section-title" style="font-size:clamp(1.5rem,2.5vw,2.1rem);">Advanced Climate Forecasts &amp; Water Infrastructure</h3>
+
+        <div style="display:grid; grid-template-columns:3fr 2fr; gap:2.5rem; align-items:flex-start; margin-top:1.5rem;">
+          <!-- Text left -->
+          <div>
+            <p class="sol-split-text">Using advanced climate forecasts and building new water systems can prevent major agricultural damage from El Niño effects. Ocean data can accurately predict El Niño patterns up to <strong style="color:var(--accent);">14 months</strong> before the actual impact (Guimarães Nobre et al., 2019).</p>
+            <p class="sol-split-text">Using this approach, governments can intervene by investing in infrastructure such as water reservoirs and deep wells — preparing communities before conditions deteriorate.</p>
+          </div>
+          <!-- Image right -->
+          <div>
+            <img src="images/image_water_resilience.png" alt="Integrated Dryland Water Resilience System diagram" style="width:100%; border-radius:12px; border:1px solid var(--border); display:block; object-fit:contain;" />
           </div>
         </div>
+        <!-- Humanitarian box — full width -->
+        <div class="sol-finding-box" style="margin-top:2rem;">
+          <div class="sol-finding-label">Humanitarian Application</div>
+          <p class="sol-finding-text">Humanitarian organizations can use these predictions to help farmers select specific types of seeds that can survive even in higher heat and lower rainfall. Although these methods do not directly solve El Niño, they can reduce the financial damage caused by extreme heat.</p>
+        </div>
+        </div>
+      </div>
 
-        <div class="sol-split-img" style="min-height:400px; background:var(--surface); display:flex; flex-direction:column; justify-content:center; padding:3rem; gap:2rem;">
-          <div class="fw-how-steps">
+      <!-- 1,2,3 STEPS -->
+      <div class="sol-section" style="border-top:1px solid var(--border);">
+        <div class="fw-how-steps">
             <div class="fw-how-step">
               <div class="fw-how-circle">01</div>
               <div>
@@ -2955,8 +2967,9 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
+
+      <!-- (old diagram removed) -->
 
       <!-- KEY TAKEAWAY -->
       <div class="sol-takeaway">
@@ -3009,10 +3022,18 @@
 
       <!-- SECTION 2: THE SOLUTION -->
       <div class="sol-section">
-          <div class="sol-section-tag">The Solution</div>
-          <h3 class="sol-section-title">Smart Separation — Stop the Cascade</h3>
-          <p class="sol-split-text">Defensive islanding and microgrids can prevent large power outages during these floods. This works by placing smart meters and digital controllers throughout the power network.</p>
-          <p class="sol-split-text">If a flood happens in one specific area, the system automatically separates that part from the main power grid. This islanding process prevents the technical failure from spreading to the rest of the city (Gonçalves et al., 2024).</p>
+        <div style="display:grid; grid-template-columns:3fr 2fr; gap:3rem; align-items:flex-start; margin-bottom:2rem;">
+          <div>
+            <div class="sol-section-tag">The Solution</div>
+            <h3 class="sol-section-title">Smart Separation — Stop the Cascade</h3>
+            <p class="sol-split-text">Defensive islanding and microgrids can prevent large power outages during these floods. This works by placing smart meters and digital controllers throughout the power network.</p>
+            <p class="sol-split-text">If a flood happens in one specific area, the system automatically separates that part from the main power grid. This islanding process prevents the technical failure from spreading to the rest of the city (Gonçalves et al., 2024).</p>
+          </div>
+          <div>
+            <img src="images/image_microgrid.jpg" alt="Microgrid defensive islanding diagram" style="width:100%; border-radius:12px; border:1px solid var(--border); object-fit:cover; display:block;" />
+            <p style="font-size:0.8rem; color:rgba(200,230,255,0.7); font-style:italic; margin-top:0.6rem; line-height:1.5;">Microgrid infrastructure — interconnected energy nodes that can isolate and self-sustain during grid failures.</p>
+          </div>
+        </div>
           <div class="sol-finding-box">
             <div class="sol-finding-label">Local Power Continuity</div>
             <p class="sol-finding-text">While the flooded area might use its own local batteries or solar power to keep the lights on, the rest of the city stays safe and stable (Gonçalves et al., 2024).</p>
@@ -3040,8 +3061,7 @@
                 <p class="isl-step-desc">The isolated zone powers itself using local batteries or solar — while the rest of the city remains fully operational.</p>
               </div>
             </div>
-          </div>
-      </div>
+
 
       <!-- KEY TAKEAWAY -->
       <div class="sol-takeaway">
